@@ -101,3 +101,7 @@ Please fork and clone this repository. Create a new Xcode project inside of the 
     * vertical distance of `8`
     * relate the text view and the "Country" label by aligning their trailing values
     * bottom to view = `20`
+
+## Complete Storyboard Preview
+
+![preview-image](https://raw.githubusercontent.com/LambdaSchool/grail-diary-part-1/master/storyboard-complete.png)

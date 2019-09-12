@@ -17,7 +17,7 @@ Please fork and clone this repository. Create a new Xcode project inside of the 
 ### Storyboard Tasks
 
 #### List of Clues View
-1. Rename the View Controller to "CluesTableViewController" with the refactor->rename option in the source code file
+1. Rename the View Controller to `POIsTableViewController` with the refactor->rename option in the source code file
 2. Embed the single View Controller scene in a Navigation Controller
 3. Drag in a Table View to that View Controller
 4. Set the navigation bar to show large titles

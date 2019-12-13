@@ -12,12 +12,12 @@ Grail Diary is an app that allows the user to track locations of interest (POIs)
 
 ## Instructions
 
-Please fork and clone this repository. Create a new Xcode project inside of the cloned repository. Use the single view app template and name it "GrailDairy"
+Please fork and clone this repository. Create a new Xcode project inside of the cloned repository. Use the single view app template and name it "GrailDiary"
 
 ### Storyboard Tasks
 
 #### List of Clues View
-1. Rename the View Controller to `POIsTableViewController` with the refactor->rename option in the source code file
+1. Rename the View Controller to `POIsTableViewController` with the refactor->rename option in the source code file. To do this, right click on the class called `ViewController` and a contextual menu will appear. Select "Refactor", then "Rename..." and type the new class name.
 2. Embed the single View Controller scene in a Navigation Controller
 3. Drag in a Table View to that View Controller
 4. Set the navigation bar to show large titles

@@ -84,7 +84,7 @@ Please fork and clone this repository. Create a new Xcode project inside of the 
     * `1:1` aspect ratio (check the box and then edit the value to make it 1:1)
     * width = `150`
     * leading = `20`
-    * align the top of the image with the top of the location name label
+    * using a constraint, align the top of the image with the top of the location name label
 35. Find a square image of an interesting location on Google and drag it into your asset catalog; set a sensible name and set the name as the image in the Image View attributes
 36. Add a horizontal distance constraint between the location label and the Image View
     * set the constant value to `8`

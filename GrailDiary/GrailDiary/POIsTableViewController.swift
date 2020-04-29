@@ -8,11 +8,24 @@
 
 import UIKit
 
-class POIsTableViewController: UIViewController {
+class POIsTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+        
+    @IBOutlet weak var tableView: UITableView!
+    var POIModels: [String]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
     }
 
 

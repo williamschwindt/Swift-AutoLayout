@@ -8,7 +8,7 @@
 
 import UIKit
 
-class POIsTableViewController: UITableViewController {
+class POIsTableViewController: UITableViewController, AddPOIDelegate {
     
     var pois: [POI] = [POI(location: "bend", country: "US", clues: ["clue 1", "clue 2", "clue 3"])]
 
@@ -41,14 +41,22 @@ class POIsTableViewController: UITableViewController {
         return cell
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "POICell" {
+            let newPoiVC = segue.destination as? AddPOIViewController
+            
+            newPoiVC?.delegate = self
+        }
     }
-    */
+    
+    func poiWasAdded(poi: POI) {
+        pois.append(poi)
+        tableView.reloadData()
+    }
+    
 
 }
